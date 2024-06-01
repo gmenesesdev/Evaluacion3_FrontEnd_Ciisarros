@@ -1,4 +1,4 @@
-<div class="container pt-5">
+    <div class="container pt-5">
     <h1 id="contacto" class="mb-5">Contáctanos</h1>
     <div class="row g-5">
         <div class="col-md-5 col-lg-4 order-md-last">
@@ -64,9 +64,6 @@
                             </option>
                             <option>Parcelas</option>
                             <option>Casa con Parcela</option>
-                            <option>
-                                Contacto con un ejecutivo
-                            </option>
                         </select>
                         <div class="invalid-feedback">
                             Por favor seleccione una opción
