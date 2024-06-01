@@ -35,6 +35,8 @@ function getEndpointByToken($_endpoint, $_token)
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
     <!-- Bootstrap Icon -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+    <!-- CSS Interno -->
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
@@ -68,6 +70,12 @@ function getEndpointByToken($_endpoint, $_token)
         <?php include 'componentes/casa_en_parcela.php' ?>
     </section>
 
+    <!-- Testimonios -->
+    <!-- Procederé a realizar el carrusel de testimonios, estoy probando una librería de JS para esto, les comentaré sobre los avances -->
+    <section id="testimonios">
+        <?php include 'componentes/testimonios.php' ?>
+    </section>
+
     <!-- Preguntas Frecuentes -->
     <section id="preguntasFrecuentes">
         <?php include 'componentes/preguntas.php' ?>
@@ -80,21 +88,27 @@ function getEndpointByToken($_endpoint, $_token)
 
 
     <!--TEST-->
+    <!-- Se valida correcto funcionamiento, revisar el comentario sobre el link al backend, linea 89-->
     <section id="test-parcela">
         <div class="container mx-auto mt-5 row">
-            <?php 
-            $endpointParcela = getEndpointByToken('http://localhost/backend-sec71-evaluacion2/v1/parcela/', 'get');
+            <?php
+            //!IMPORTANTE: Cambiar el endpoint por el de su backend (en este caso estoy usando un backend local)
+            // $endpointParcela = getEndpointByToken('http://localhost/backend-sec71-evaluacion2/v1/parcela/', 'get');
+            $endpointParcela = getEndpointByToken('http://localhost:8080/backend-evaluacion2-sec71/v1/parcela/', 'get');
             //transformar el contenido del endpoint en formato JSON
-            $endpointParcela = json_decode($endpointParcela,true);
-            
-            foreach($endpointParcela['data'] as $datoParcela){
+            $endpointParcela = json_decode($endpointParcela, true);
+
+            foreach ($endpointParcela['data'] as $datoParcela) {
                 include 'componentes/card.php';
             }
             ?>
         </div>
     </section>
 
-
+    <!-- Boton Inicio -->
+    <button onclick="topFunction()" id="myBtn" title="Volver al inicio">
+        <i class="bi bi-arrow-up"></i>
+    </button>
     <!-- Footer -->
     <footer>
         <?php include 'componentes/footer.php' ?>

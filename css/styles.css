@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Ruda:wght@400..900&family=Telex&display=swap');
+
+:root {
+    --bs-body-font-family:"Telex", sans-serif;
+}
+
+html {
+    /* font-size: 62.5%; */
+    box-sizing: border-box;
+    height: 100%;
+    scroll-padding-top: 80px;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+.navbar-brand {
+    font-size: 2rem;
+    padding-left: 2rem;
+}
+
+.bg-image {
+    background-image: linear-gradient(
+        rgba(255, 255, 255, 0.2), 
+        rgba(255, 255, 255, 0.2)
+      ), url(../img/illiya-vjestica-W5FdAcHp7l8-unsplash.bak.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.text-blck {
+    opacity: 1;
+    color: black;
+}
+
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: rgba(68, 212, 55, 0.464);
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 18px;
+  }
+  
+  #myBtn:hover {
+    background-color: rgba(77, 105, 75, 0.464);; /* Add a dark-grey background on hover */
+  }
