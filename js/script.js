@@ -60,9 +60,18 @@ function topFunction() {
     document.documentElement.scrollTop = 0; // Para Chrome, Firefox, IE y Opera
 }
 
+//TODO: Hacer que el menu se cierre al hacer click en un enlace, no funciona en este momento
+// $(document).ready(function () {
+//     $('.js-scroll-trigger').click(function () {
+//         $('.navbar-collapse').collapse('hide');
+//     });
+// });
 
-$(document).ready(function () {
-    $('.js-scroll-trigger').click(function () {
-        $('.navbar-collapse').collapse('hide');
-    });
-});
+function selectOption(option) {
+    // Desplazar al formulario
+    document.getElementById('contacto').scrollIntoView({ behavior: 'smooth' });
+
+    // Seleccionar la opción correspondiente
+    const selectElement = document.getElementById('state');
+    selectElement.value = option;
+}
