@@ -53,7 +53,23 @@
 
     <!-- Preguntas Frecuentes -->
     <section id="preguntasFrecuentes">
-        <?php include 'componentes/preguntas.php' ?>
+        <div class="container pt-5">
+            <h1 id="preguntas" class="mb-5">Preguntas Frecuentes</h1>
+            <?php
+            include_once 'functions/funciones.php';
+            $endpoint = 'http://localhost:8080/backend-evaluacion2-sec71/v1/pregunta_frecuente/';
+            $token = 'get';
+            //!IMPORTANTE: Cambiar el endpoint por el de su backend (en este caso estoy usando un backend local)
+            // $endpointParcela = getEndpointByToken('http://localhost/backend-sec71-evaluacion2/v1/parcela/', 'get');
+            $endpointPregunta = getEndpointByToken($endpoint, $token);
+            //transformar el contenido del endpoint en formato JSON
+            $endpointPregunta = json_decode($endpointPregunta, true);
+
+            foreach ($endpointPregunta['data'] as $datoPregunta) {
+                include 'componentes/preguntas.php';
+            }
+            ?>
+        </div>
     </section>
 
     <!-- Contacto -->
@@ -67,7 +83,7 @@
     <section id="test-parcela">
         <div class="container mx-auto mt-5 row">
             <?php
-            include 'functions/funciones.php';
+            include_once 'functions/funciones.php';
             $endpoint = 'http://localhost:8080/backend-evaluacion2-sec71/v1/parcela/';
             $token = 'get';
             //!IMPORTANTE: Cambiar el endpoint por el de su backend (en este caso estoy usando un backend local)
