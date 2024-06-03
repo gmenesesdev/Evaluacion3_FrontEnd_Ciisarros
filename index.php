@@ -1,28 +1,3 @@
-<?php
-function getEndpointByToken($_endpoint, $_token)
-{
-    //echo 'endpoint: ' . $_endpoint . ' | token: ' . $_token;
-    //Configuracion de la solicitud con cURL
-    $ch = curl_init($_endpoint);
-    //configurar Headers
-    curl_setopt($ch, CURLOPT_HTTPHEADER, array(
-        'Authorization: Bearer ' . $_token
-    ));
-    //configurar que contiene respuesta
-    curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-    //ejecutar la solicitud / pegarle al endpoint
-    $respuesta = curl_exec($ch);
-    //verificar si existe una respuesta
-    if ($respuesta === false) {
-        return 'Error en la solicitud: ' . curl_error($ch);
-    }
-    //cerrar la sesion de cURL
-    curl_close($ch);
-    return $respuesta;
-}
-?>
-
-
 <!DOCTYPE html>
 <html lang="es">
 
@@ -92,9 +67,12 @@ function getEndpointByToken($_endpoint, $_token)
     <section id="test-parcela">
         <div class="container mx-auto mt-5 row">
             <?php
+            include 'functions/funciones.php';
+            $endpoint = 'http://localhost:8080/backend-evaluacion2-sec71/v1/parcela/';
+            $token = 'get';
             //!IMPORTANTE: Cambiar el endpoint por el de su backend (en este caso estoy usando un backend local)
             // $endpointParcela = getEndpointByToken('http://localhost/backend-sec71-evaluacion2/v1/parcela/', 'get');
-            $endpointParcela = getEndpointByToken('http://localhost:8080/backend-evaluacion2-sec71/v1/parcela/', 'get');
+            $endpointParcela = getEndpointByToken($endpoint, $token);
             //transformar el contenido del endpoint en formato JSON
             $endpointParcela = json_decode($endpointParcela, true);
 
