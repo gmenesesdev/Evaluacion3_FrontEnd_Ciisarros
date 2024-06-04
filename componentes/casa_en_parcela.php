@@ -10,7 +10,7 @@
                 de la casa soñada.
             </p>
             <div class="text-center">
-                <button class="btn btn-primary" onclick="selectOption('Casas con Parcelas')">Casas con Parcelas</button>
+                <button class="btn btn-primary" onclick="selectOption('Casa con Parcela')">Casa con Parcela</button>
             </div>
         </div>
         <div class="col-md-5 order-md-1">

@@ -12,7 +12,7 @@
                 metros cuadrados.
             </p>
             <div class="text-center">
-                <button class="btn btn-primary" onclick="selectOption('Solo Terreno')">Seleccionar Solo Terrenos</button>
+                <button class="btn btn-primary" onclick="selectOption('Parcelas')">Seleccionar Parcelas</button>
             </div>
         </div>
         <div class="col-md-5">
