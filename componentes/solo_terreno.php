@@ -16,7 +16,10 @@
             </div>
         </div>
         <div class="col-md-5">
-            <img src="img/peter-muscutt-pkg77ZtBCmg-unsplash.jpg" alt="" class="img-fluid rounded" />
+            <picture>
+                <source srcset="img/peter-muscutt-pkg77ZtBCmg-unsplash.webp">
+                <img src="img/peter-muscutt-pkg77ZtBCmg-unsplash.jpg" alt="Parcela" class="img-fluid rounded">
+            </picture>
         </div>
     </div>
 </div>

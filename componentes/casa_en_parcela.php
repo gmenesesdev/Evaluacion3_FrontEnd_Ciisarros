@@ -14,7 +14,11 @@
             </div>
         </div>
         <div class="col-md-5 order-md-1">
-            <img src="img/bailey-anselme-Bkp3gLygyeA-unsplash.jpg" alt="" class="img-fluid rounded" />
+        <picture>
+                <source srcset="img/bailey-anselme-Bkp3gLygyeA-unsplash.webp">
+                <img src="img/bailey-anselme-Bkp3gLygyeA-unsplash.jpg" alt="" class="img-fluid rounded" />
+            </picture>
+            
         </div>
     </div>
     <hr class="featurette-divider" />
