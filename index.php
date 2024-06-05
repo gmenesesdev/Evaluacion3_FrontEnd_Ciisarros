@@ -16,7 +16,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <!-- CSS Interno -->
     <link rel="stylesheet" href="css/styles.css">
-    
+    <!-- Script de Google ReCaptcha -->
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
 
 <body>
@@ -116,6 +117,7 @@
             </footer>
         </div>
     </main>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
     <!-- Bootstrap Bundle JS (includes Popper) -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Swiper JS -->

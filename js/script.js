@@ -19,25 +19,44 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
 (() => {
     "use strict";
-
-    //Toma todos los formularios
-    const forms = document.querySelectorAll(".needs-validation");
-
-    //Recorre todos y previene la propagación
-    Array.from(forms).forEach((form) => {
-        form.addEventListener(
-            "submit",
-            (event) => {
-                if (!form.checkValidity()) {
-                    event.preventDefault();
-                    event.stopPropagation();
+    window.addEventListener(
+        "load",
+        function () {
+            var forms = document.getElementsByClassName("needs-validation");
+            var validation = Array.prototype.filter.call(
+                forms,
+                function (form) {
+                    form.addEventListener(
+                        "submit",
+                        function (event) {
+                            if (form.checkValidity() === false) {
+                                event.preventDefault();
+                                event.stopPropagation();
+                            } else {
+                                event.preventDefault();
+                                var formData = new FormData(form);
+                                fetch("functions/procesar_formulario.php", {
+                                    method: "POST",
+                                    body: formData,
+                                })
+                                    .then((response) => response.json())
+                                    .then((data) => {
+                                        console.log(data);
+                                        alert(data.message);
+                                    })
+                                    .catch((error) => {
+                                        console.error("Error:", error);
+                                    });
+                            }
+                            form.classList.add("was-validated");
+                        },
+                        false
+                    );
                 }
-
-                form.classList.add("was-validated");
-            },
-            false
-        );
-    });
+            );
+        },
+        false
+    );
 })();
 
 // Obtener boton
@@ -82,7 +101,7 @@ function selectOption(option) {
 }
 
 document.addEventListener("DOMContentLoaded", function () {
-    fetch("../dummy_data/testimonials.json")
+    fetch("dummy_data/testimonials.json")
         .then((response) => response.json())
         .then((data) => {
             const testimonialContainer = document.getElementById(
