@@ -14,7 +14,7 @@
             </div>
         </div>
         <div class="col-md-7 col-lg-8">
-            <form class="needs-validation was-validated" novalidate="">
+            <form class="needs-validation" novalidate>
                 <div class="row g-3">
                     <div class="col-sm-6">
                         <label for="firstName" class="form-label">Nombre</label>

@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Ruda:wght@400..900&family=Telex&display=swap");
 
+
 :root {
     --bs-body-font-family: "Telex", sans-serif;
 }
@@ -66,4 +67,14 @@ html {
         75,
         0.464
     ); /* Add a dark-grey background on hover */
+}
+
+.swiper {
+    width: auto;
+    height: 400px;
+}
+
+.testimonial {
+    width: 60px;
+    height: 60px;
 }
