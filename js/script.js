@@ -44,10 +44,15 @@ document.addEventListener("DOMContentLoaded", (event) => {
 let mybutton = document.getElementById("myBtn");
 
 // Cuando el usuario baja de 20px, muestra el boton
-window.onscroll = function () { scrollFunction() };
+window.onscroll = function () {
+    scrollFunction();
+};
 
 function scrollFunction() {
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    if (
+        document.body.scrollTop > 20 ||
+        document.documentElement.scrollTop > 20
+    ) {
         mybutton.style.display = "block";
     } else {
         mybutton.style.display = "none";
@@ -69,9 +74,61 @@ function topFunction() {
 
 function selectOption(option) {
     // Desplazar al formulario
-    document.getElementById('contacto').scrollIntoView({ behavior: 'smooth' });
+    document.getElementById("contacto").scrollIntoView({ behavior: "smooth" });
 
     // Seleccionar la opción correspondiente
-    const selectElement = document.getElementById('state');
+    const selectElement = document.getElementById("state");
     selectElement.value = option;
 }
+
+document.addEventListener("DOMContentLoaded", function () {
+    fetch("../dummy_data/testimonials.json")
+        .then((response) => response.json())
+        .then((data) => {
+            const testimonialContainer = document.getElementById(
+                "testimonial-container"
+            );
+            data.forEach((testimonial) => {
+                const slide = document.createElement("div");
+                slide.className = "swiper-slide";
+                slide.innerHTML = `
+                    <div class="card">
+                        <div class="card-body p-4 p-xxl-5">
+                            <div class="bsb-ratings text-warning mb-3" data-bsb-star="5" data-bsb-star-off="0"></div>
+                            <blockquote class="bsb-blockquote-icon mb-3">${testimonial.testimonial}</blockquote>
+                            <figure class="d-flex align-items-center m-0 p-0">
+                                <img class="img-fluid rounded rounded-circle m-0 border border-5 testimonial" loading="lazy" src="${testimonial.image}" alt="">
+                                <figcaption class="ms-3">
+                                    <h4 class="mb-1 h5">${testimonial.name}</h4>
+                                    <h5 class="fs-6 text-secondary mb-0">${testimonial.location}</h5>
+                                    <h5 class="fs-6 text-secondary mb-0">${testimonial.profession}</h5>
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                `;
+                testimonialContainer.appendChild(slide);
+            });
+
+            // Inicializar Swiper
+            const swiper = new Swiper(".swiper", {
+                // Optional parameters
+                direction: "horizontal",
+                loop: true,
+                slidesPerView: 2,
+                spaceBetween: 30,
+
+                // Navigation arrows
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+
+                // And if we need scrollbar
+                scrollbar: {
+                    el: ".swiper-scrollbar",
+                },
+            });
+        })
+        .catch((error) => console.error("Error loading testimonials:", error));
+});

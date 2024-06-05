@@ -1,0 +1,44 @@
+[
+    {
+        "name": "María Fernanda Ríos",
+        "profession": "Ingeniera Ambiental",
+        "testimonial": "Terrasol Parcelas hizo realidad mi sueño de tener un terreno propio. El tour virtual y el crédito directo fueron clave en mi decisión.",
+        "location": "Chillán, Región de Ñuble",
+        "image": "../img/testimonials/testimonial-1.png"
+    },
+    {
+        "name": "Claudia Morales",
+        "profession": "Profesora",
+        "testimonial": "La accesibilidad financiera y la atención personalizada de Terrasol Parcelas me dieron la confianza para invertir. Muy satisfecha con mi compra.",
+        "location": "Linares, Región del Maule",
+        "image": "../img/testimonials/testimonial-2.png"
+    },
+    {
+        "name": "Ricardo Torres",
+        "profession": "Médico",
+        "testimonial": "Excelente atención y proceso transparente. La compra fue segura y sin complicaciones. Terrasol Parcelas superó mis expectativas.",
+        "location": "Los Ángeles, Región del Biobío",
+        "image": "../img/testimonials/testimonial-3.png"
+    },
+    {
+        "name": "Juan Pablo Alarcón",
+        "profession": "Arquitecto",
+        "testimonial": "El proceso de compra con Terrasol Parcelas fue fácil y seguro. La opción de financiamiento directo hizo todo mucho más simple.",
+        "location": "Concepción, Región del Biobío",
+        "image": "../img/testimonials/testimonial-4.png"
+    },
+    {
+        "name": "Carolina Pérez",
+        "profession": "Abogada",
+        "testimonial": "Terrasol Parcelas me ofreció una solución completa y sin estrés. Ahora disfruto de mi parcela en un entorno hermoso.",
+        "location": "Osorno, Región de Los Lagos",
+        "image": "../img/testimonials/testimonial-5.png"
+    },
+    {
+        "name": "Felipe Castro",
+        "profession": "Ingeniero Civil",
+        "testimonial": "La experiencia con Terrasol Parcelas fue excelente. La atención personalizada y el financiamiento directo me permitieron comprar mi parcela sin problemas. Estoy muy contento con mi nueva propiedad.",
+        "location": "Talca, Región del Maule",
+        "image": "../img/testimonials/testimonial-6.png"
+    }
+]
