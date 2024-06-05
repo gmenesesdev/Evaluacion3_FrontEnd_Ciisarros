@@ -2,14 +2,14 @@
     <h1 id="contacto" class="mb-5">Contáctanos</h1>
     <div class="row g-5">
         <div class="col-md-5 col-lg-4">
-            <div class="border mb-5">
-                <h3 class="text-center pt-5">Ubicación</h3>
+            <div class="border mb-5 bg-info-subtle rounded" loading="lazy">
+                <h3 class="text-center pt-5"><i class="bi bi-geo-alt"></i> Ubicación</h3>
                 <p class="text-center pb-5">
                     Entre Talca y la Región de Los Lagos
                 </p>
             </div>
-            <div class="border">
-                <h3 class="text-center pt-5">Teléfono</h3>
+            <div class="border mb-5 bg-info-subtle rounded">
+                <h3 class="text-center pt-5"><i class="bi bi-telephone"></i> Teléfono</h3>
                 <p class="text-center pb-5">+56 9 5018 6583</p>
             </div>
         </div>

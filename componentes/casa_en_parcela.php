@@ -1,7 +1,7 @@
 <div class="container">
     <hr class="featurette-divider" />
     <div class="row featurette">
-        <div class="col-md-7 order-md-2">
+        <div class="col-md-7 order-md-2 mb-3">
             <h2 id="casa-parcela" class="featurette-heading fw-normal lh-1 text-center pt-3">
                 <?php echo $datoParcela['nombre'] ?>
             </h2>

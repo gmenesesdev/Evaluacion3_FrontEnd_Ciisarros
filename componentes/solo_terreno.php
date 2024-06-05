@@ -1,6 +1,6 @@
 <hr class="featurette-divider" />
 <div class="row featurette">
-    <div class="col-md-7">
+    <div class="col-md-7 mb-3">
         <h2 id="solo-terreno" class="featurette-heading fw-normal lh-1 text-center pt-3">
             <!-- <h2 class="featurette-heading fw-normal lh-1"> -->
             <?php echo $datoParcela['nombre'] ?>
