@@ -47,7 +47,7 @@
                 <div class="container mx-auto row">
                     <?php
                     include_once 'functions/funciones.php';
-                    $endpoint = 'http://localhost:8080/backend-evaluacion2-sec71/v1/parcela/';
+                    $endpoint = 'http://localhost:8080/backend-sec71-evaluacion3/v1/parcela/';
                     $token = 'get';
                     //!IMPORTANTE: Cambiar el endpoint por el de su backend (en este caso estoy usando un backend local)
                     // $endpointParcela = getEndpointByToken('http://localhost/backend-sec71-evaluacion2/v1/parcela/', 'get');
@@ -91,7 +91,7 @@
                 <h1 id="preguntas" class="mb-5">Preguntas Frecuentes</h1>
                 <?php
                 include_once 'functions/funciones.php';
-                $endpoint = 'http://localhost:8080/backend-evaluacion2-sec71/v1/pregunta_frecuente/';
+                $endpoint = 'http://localhost:8080/backend-sec71-evaluacion3/v1/pregunta_frecuente/';
                 $token = 'get';
                 //!IMPORTANTE: Cambiar el endpoint por el de su backend (en este caso estoy usando un backend local)
                 // $endpointParcela = getEndpointByToken('http://localhost/backend-sec71-evaluacion2/v1/parcela/', 'get');
