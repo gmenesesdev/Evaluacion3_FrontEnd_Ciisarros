@@ -1,7 +1,7 @@
 <div class="container pt-5">
     <h1 id="contacto" class="mb-5">Contáctanos</h1>
     <div class="row g-5">
-        <div class="col-md-5 col-lg-4 order-md-last">
+        <div class="col-md-5 col-lg-4">
             <div class="border mb-5">
                 <h3 class="text-center pt-5">Ubicación</h3>
                 <p class="text-center pb-5">
@@ -13,7 +13,7 @@
                 <p class="text-center pb-5">+56 9 5018 6583</p>
             </div>
         </div>
-        <div class="col-md-7 col-lg-8">
+        <div class="col-md-7 col-lg-8 order-first">
         <form id="contactForm" class="needs-validation" action="functions/procesar_formulario.php" method="POST" novalidate>
                 <div class="row g-3">
                     <div class="col-sm-6">
@@ -88,7 +88,7 @@
 
                 <hr class="my-4" />
 
-                <div class="g-recaptcha" data-sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"></div>
+                <div class="g-recaptcha pb-4" align="center" data-sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"></div>
                 
                 <button class="w-100 btn btn-primary btn-lg" type="submit">Enviar</button>
             </form>
