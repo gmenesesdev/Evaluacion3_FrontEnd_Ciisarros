@@ -10,7 +10,7 @@ Docente:
 
 ## Video Instructivo Resumen
 
-<iframe src="https://www.youtube.com/embed/VgKSdZvsZjM">
+https://www.youtube.com/embed/VgKSdZvsZjM
 
 
 ## Capturas de Pantalla
