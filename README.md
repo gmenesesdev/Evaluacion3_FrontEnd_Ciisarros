@@ -1,4 +1,4 @@
-# Evaluacion3_FrontEnd_Ciisarros - Ramo de FrontEnd, IPSS - Sección 71
+# Evaluacion3_FrontEnd_Ciisarros - Ramo de FrontEnd, CIISA - Sección 71
 Integrantes:
 * David Alejandro Robles Martinez
 * Gabriel Fernando Sanhueza Pincheira
@@ -23,8 +23,13 @@ Docente:
 ![](img/screenshots/contactanos-validacion-recaptcha.jpg)
 ### Footer más botón Al Inicio
 ![](img/screenshots/footer-ontop.png)
-
+### Rendimiento Web en Lighthouse
+![SEO Lighthouse](img/screenshots/SEO%20Lighthouse.png)
 ## Guía de Buenas Prácticas
+
+* Se agrega manual de buenas prácticas
+
+[Eval_U3_CIISARROS_ManualBuenasPracticas.pdf](Eval_U3_CIISARROS_ManualBuenasPracticas.pdf)
 
 ### Estructura del proyecto
 ```
@@ -43,8 +48,10 @@ Docente:
         └── testimonios.php
     └── 📁css
         └── styles.css
+    └── debug.log
     └── 📁dummy_data
         └── testimonials.json
+    └── Eval_U3_CIISARROS_Manual.pdf
     └── fiveserver.config.js
     └── 📁functions
         └── funciones.php
@@ -61,11 +68,16 @@ Docente:
         └── peter-muscutt-pkg77ZtBCmg-unsplash.jpg
         └── peter-muscutt-pkg77ZtBCmg-unsplash.webp
         └── 📁screenshots
+            └── conexion-sql.png
             └── contactanos-sindata.jpg
             └── contactanos-validacion-recaptcha.jpg
             └── contactanos.jpg
+            └── footer-ontop.png
             └── header-nosotros.jpg
             └── parcelas.jpg
+            └── puerto.index.php.jpg
+            └── script-testimoniales.png
+            └── teestimoniales.png
             └── testimonios-preguntas.jpg
         └── 📁testimonials
             └── testimonial-1.png
